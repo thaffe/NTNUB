@@ -1,0 +1,173 @@
+topheight = 50px;
+sidewidth = 50px;
+
+shadow(arguments)
+    -webkit-box-shadow arguments
+    -moz-box-shadow arguments
+    box-shadow arguments
+trans(arguments)
+    -webkit-transition: arguments; /* For Safari 3.1 to 6.0 */
+    transition: arguments;
+body
+    background #EFEFEF
+
+header
+    background #ffffff
+    postion fixed
+    z-index: 10
+    top 0
+    left 0
+    right 0
+    height topheight
+    shadow(2px 0 3px rgba(0, 0, 0, 0.3))
+    h2
+        padding 0
+        margin 0
+    .btns
+        float right
+    a
+        display inline-block
+        margin-left 10px
+
+footer
+    display: none
+
+
+#main-menu
+    width sidewidth
+    position fixed
+    top topheight
+    bottom 0
+    left 0
+    background #222
+    padding 10px 5px
+    text-align center
+    a
+        display inline-block
+        width 40px
+        height 40px
+        color #ffffff
+        font-size 35px
+        margin 7px 3px
+        &:hover
+            color #0099ff
+
+#page
+    position: absolute
+    top topheight
+    left sidewidth
+    right 0
+    padding 5px
+
+.block,.modal-box
+    background #ffffff
+    padding 5px
+    border 1px solid #dddddd
+    shadow(2px 2px 3px rgba(0, 0, 0, 0.3))
+    position relative
+    min-height:50px
+
+.block
+    margin 5px -10px
+
+.block-icon
+    position absolute
+    top 3px
+    right 7px
+    color #999
+    .fa
+        font-size 18px
+    a
+        color#999
+        -webkit-transition: color 0.5s; /* For Safari 3.1 to 6.0 */
+        transition: color 0.5s;
+    a:hover
+        text-decoration none
+        color:#428bca
+
+.tt-cursor a
+   background #428bca !important
+   color white !important
+
+.pad
+    padding 10px 20px
+.shortcuts
+    padding 0 15px
+
+.dropdown a
+    -webkit-transition: all 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: all 0.3s;
+.tile-holder
+    padding 3px 5px !important
+
+.loader
+    background url(/images/loader.gif) no-repeat center center
+    height 55px
+.tile
+    display block
+    border 1px solid #aaaaaa
+    height 90px
+    background #eee
+    width 100%
+    text-align center
+    color #333
+    padding-top 20px
+    color black
+    trans(background-color 0.4s)
+    .icon
+        font-size 42px
+        height 40px
+        width 100%
+
+    &:hover
+        color black
+        text-decoration none
+        background-color #ddd
+
+
+
+
+.googledoc
+    background-image url("/images/googledoc.png")
+    background-repeat no-repeat
+    background-position center center;
+
+.itslearning
+    background-image url("/images/itslearning.png")
+    background-repeat no-repeat
+    background-position center center;
+
+
+.cal-head
+    border-bottom:1px solid #CCC;
+.cal-col
+    width:14.25%
+    text-align center
+    font-weight bold
+    color #555
+    float:left;
+    border-right:1px solid #CCC;
+    height:100px;
+    &:last-child
+        border:none;
+
+
+#modal-box
+    display none
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background rgba(0,0,0,0.3)
+
+.modal-box
+    width 600px
+    margin 30px auto
+
+.profile-img
+    width topheight - 12
+    height topheight - 12
+    padding 2px
+    border 1px solid #DDD
+    margin 6px

@@ -1,0 +1,275 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+
+
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.0.0/css/bootstrap-datetimepicker.min.css"/>-->
+    <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.0.0/js/bootstrap-datetimepicker.js"></script>-->
+    <title>ntNUB</title>
+</head>
+
+<body>
+<header>
+    <div class="btns">
+        {{> signedInAs}}
+    </div>
+    <img src="/images/ntnulogo.png" height="40" alt="" style="margin:5px 10px"/>
+</header>
+<nav id="main-menu">
+    <a href="/"><i class="fa fa-home"></i></a>
+    <a href="/"><i class="fa fa-calendar"></i></a>
+</nav>
+<div id="page">
+    {{#if currentUser}}
+    {{>shortcuts}}
+    {{> courses}}
+    {{> agenda}}
+    {{else}}
+    {{>login}}
+    {{>shortcuts}}
+    {{/if}}
+</div>
+<footer>
+    Copyright &copy; by My Company.<br/>
+    All Rights Reserved.<br/>
+</footer>
+
+<div id="modal-box">
+    <div class="modal-box">
+        <div class="block-icon"><span class="modal-close fa fa-times"></span></div>
+        <div id="modal-content" class="content"></div>
+    </div>
+</div>
+
+</body>
+
+<template name="shortcuts">
+    <div class="col-md-12">
+        <div class="block">
+            <div class="row shortcuts">
+                {{#if loading}}
+                <div class="loader"></div>
+                {{else}}
+                {{#each shortcuts}}
+                <div class="tile-holder col-lg-1 col-md-2 col-sm-3 col-xs-4">
+                    {{> tile}}
+                </div>
+                {{/each}}
+                <div class="block-icon">
+                    <a class="edit fa fa-pencil"></a>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+
+</template>
+
+<template name="tile">
+    <a class="tile" href="{{link}}">
+        <div class="icon {{icon}}"></div>
+        <div>{{label}}</div>
+    </a>
+</template>
+
+<template name="shortcutsEdit">
+    <h3>Rediger dine snarvieer</h3>
+
+    <div class="pad">
+        <div class="row">
+            {{#each shortcuts}}
+            <div class="tile-holder col-xs-3 ">
+                {{> tile}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+</template>
+
+<template name="login">
+    {{#unless hasLoggedIn}}
+    <div class="col-md-12">
+        <div class="block pad">
+            <legend>Velkommen til NTNUB</legend>
+            <p>
+                NTNUB er tenkt som en side som skal hjelpe studenter på NTNU med å letter og mer effektift ha oversikt over hverdagen.
+                Med snarveier til det du trenger, og en utvidet kalender som er tilpasset ting som skjer på skolen.
+            </p>
+            {{#if loggingIn}}
+            <div class="loader"></div>
+            {{else}}
+            <button class="facebook btn btn-primary btn-lg"><i class="fa fa-facebook-square"></i> Logg inn med facebook
+            </button>
+            <button class="google btn btn-primary btn-lg"><i class="fa fa-google-plus-square"></i> Logg inn med google
+            </button>
+            {{/if}}
+            <p class="text-muted">
+                Siden er under utvikling
+            </p>
+
+        </div>
+    </div>
+    {{/unless}}
+</template>
+
+
+<template name="courses">
+    <div class="col-md-6">
+        <div class="block pad">
+            {{#if loggingIn}}
+            <div class="loader"></div>
+            {{else}}
+            <legend>Mine fag</legend>
+            {{#if editCourses}}
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-primary saveCourses pull-right">Lagre</button>
+                    <input id="course-input" type="text"/>
+                </div>
+            </div>
+
+            {{else}}
+            <div class="block-icon">
+                <a class="editCourses fa fa-pencil"></a>
+            </div>
+            {{/if}}
+            {{/if}}
+            <div>
+                {{#each courses}}
+                <p>
+                    <strong>{{code}}</strong><br>
+                    {{name}}
+                <hr>
+                </p>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="agenda">
+    <div class="col-md-6">
+        <div class="block pad">
+            <legend>Agenda</legend>
+            <div class="block-icon">
+                <a class="addEvent">Legg til <i class="fa fa-plus"></i></a>
+            </div>
+            {{#each items}}
+            <p>
+                <strong>{{name}} - {{date start}}-{{date end}}</strong><br>
+                {{place}}
+            <hr>
+            </p>
+            {{/each}}
+            {{#if loading}}
+            <div class="loader"></div>
+            {{/if}}
+        </div>
+    </div>
+</template>
+
+<template name="agendaForm">
+    <div class="pad">
+        <h3>Legg til event</h3>
+
+        <form role="form" action="/" id="eventForm">
+            <div class="form-group">
+                <label for="eventName">Navn</label>
+                <input id="eventName" name="name" type="text" class="form-control" placeholder="Event Navn"/>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="eventStart">Starter</label>
+
+                    <div class='input-group date' id="dateStartPicker">
+                        <input id="eventStart" type="text" name="start" class="form-control"/>
+                <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                    </span>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="eventEnd">Slutter</label>
+
+                    <div class='input-group date' id="dateEndPicker">
+                        <input id="eventEnd" type="text" name="end" class="form-control"/>
+                <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="eventLink">Link til&nbsp;
+                    <i class="fa fa-info-circle text-info" data-toggle="tooltip"
+                       data-placement="right"
+                       title="Hvis du linker til et fag vil alle som tar faget kunne se dette eventet"></i>
+                </label>
+                <select class="form-control" name="link" id="eventLink">
+                    <option value="">Private event</option>
+                    {{#each links}}
+                    <option value="{{_id}}">{{code}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            {{>locationPicker}}
+            <div class="form-group">
+                <label>Gjenta</label>
+
+                <div>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="repeat" id="option1" value="0" checked>En gang
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="repeat" id="option2" value="1"> Hver uke
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="repeat" id="option3" value="2"> Hver måned
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group"><label for="eventNote">Notis</label>
+                <textarea class="form-control" rows="3" id="eventNote" name="note"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Lagre</button>
+                <button type="reset" class="btn btn-default modal-close">Lukk</button>
+            </div>
+        </form>
+    </div>
+</template>
+<template name="signedInAs">
+    {{#if currentUser}}
+    <div>
+        {{name}}
+        <img src="{{image}}" alt="" class="profile-img">
+    </div>
+    {{/if}}
+</template>
+<template name="locationPicker">
+    <div class="row">
+        <div class="form-group col-xs-8">
+            <label>Sted
+            </label>
+
+            <div>
+                <input class="form-control" type="text" id="locationName" placeholder="Søk etter sted"/>
+                <input type="hidden" id="locationValue" name="location"/>
+            </div>
+        </div>
+        <div class="form-group col-xs-4">
+            <label>Type</label>
+            <select class="form-control" id="locationType">
+                <option value="">Addresse/Sted</option>
+                <option value="">NTNU Rom/Bygning</option>
+            </select>
+        </div>
+    </div>
+</template>
+
+
