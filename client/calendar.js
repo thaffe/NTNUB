@@ -1,3 +1,8 @@
+/*!
+ * NTNUB v0.1 (http://ntnub.com)
+ * Copyright 2014 Nicolay Thafvelin.
+ * Licensed under BSD (https://github.com/thaffe/NTNUB/blob/master/LICENSE)
+ */
 moment.lang('nb', {
     months: "januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember".split("_"),
     monthsShort: "jan._feb._mars_april_mai_juni_juli_aug._sep._okt._nov._des.".split("_"),

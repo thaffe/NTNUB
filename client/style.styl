@@ -1,6 +1,12 @@
+/*!
+ * NTNUB v0.1 (http://ntnub.com)
+ * Copyright 2014 Nicolay Thafvelin.
+ * Licensed under BSD (https://github.com/thaffe/NTNUB/blob/master/LICENSE)
+ */
 topheight = 50px;
 sidewidth = 50px;
-
+footerheight = 80px;
+bc = 1px solid #DDD
 shadow(arguments)
     -webkit-box-shadow arguments
     -moz-box-shadow arguments
@@ -8,18 +14,21 @@ shadow(arguments)
 trans(arguments)
     -webkit-transition: arguments; /* For Safari 3.1 to 6.0 */
     transition: arguments;
-body
+html,body
     background #EFEFEF
+    height 100%
+    padding 0
+    margin 0
 
 header
     background #ffffff
-    postion fixed
+    position fixed
     z-index: 10
     top 0
     left 0
     right 0
     height topheight
-    shadow(2px 0 3px rgba(0, 0, 0, 0.3))
+    shadow(0 3px 3px rgba(0, 0, 0, 0.3))
     h2
         padding 0
         margin 0
@@ -30,7 +39,25 @@ header
         margin-left 10px
 
 footer
-    display: none
+    height footerheight
+    margin-left sidewidth
+    padding 10px 15px
+    display block
+    border-top bc
+    background #fff
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    color #666
+    ul
+        padding-left:0
+    li
+        display: inline-block
+        &:not(:first-child):before
+            content:" - "
+
+
 
 
 #main-menu
@@ -52,12 +79,13 @@ footer
         &:hover
             color #0099ff
 
+#container {
+    min-height:100%;
+    position:relative;
+}
+
 #page
-    position: absolute
-    top topheight
-    left sidewidth
-    right 0
-    padding 5px
+    padding topheight+5 5px footerheight+5px sidewidth+5
 
 .block,.modal-box
     background #ffffff

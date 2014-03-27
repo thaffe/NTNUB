@@ -13,38 +13,45 @@
 </head>
 
 <body>
-<header>
-    <div class="btns">
-        {{> signedInAs}}
+<div id="container">
+    <header>
+        <div class="btns">
+            {{> signedInAs}}
+        </div>
+        <img src="/images/ntnulogo.png" height="40" alt="" style="margin:5px 10px"/>
+    </header>
+    <nav id="main-menu">
+        <a href="/"><i class="fa fa-home"></i></a>
+        <a href="/"><i class="fa fa-calendar"></i></a>
+    </nav>
+    <div id="page">
+        {{#if currentUser}}
+        {{>shortcuts}}
+        {{> courses}}
+        {{> agenda}}
+        {{else}}
+        {{>login}}
+        {{>shortcuts}}
+        {{/if}}
     </div>
-    <img src="/images/ntnulogo.png" height="40" alt="" style="margin:5px 10px"/>
-</header>
-<nav id="main-menu">
-    <a href="/"><i class="fa fa-home"></i></a>
-    <a href="/"><i class="fa fa-calendar"></i></a>
-</nav>
-<div id="page">
-    {{#if currentUser}}
-    {{>shortcuts}}
-    {{> courses}}
-    {{> agenda}}
-    {{else}}
-    {{>login}}
-    {{>shortcuts}}
-    {{/if}}
-</div>
-<footer>
-    Copyright &copy; by My Company.<br/>
-    All Rights Reserved.<br/>
-</footer>
+    <footer>
+        Copyright &copy; av NTNUB og Nicolay Thafvelin.<br/>
+        Code licensed under <a href="https://github.com/thaffe/NTNUB/blob/master/LICENSE" target="_blank">BSD</a>
+        <ul class="text-muted">
+            <li><a href="https://github.com/thaffe/NTNUB" target="_blank"><i
+                    class="fa fa-github-square"></i> GitHub </a></li>
+            <li><a href="https://github.com/thaffe/NTNUB" target="_blank"><i
+                    class="fa fa-info-circle"></i> Om NTNU</a></li>
+        </ul>
+    </footer>
 
-<div id="modal-box">
-    <div class="modal-box">
-        <div class="block-icon"><span class="modal-close fa fa-times"></span></div>
-        <div id="modal-content" class="content"></div>
+    <div id="modal-box">
+        <div class="modal-box">
+            <div class="block-icon"><span class="modal-close fa fa-times"></span></div>
+            <div id="modal-content" class="content"></div>
+        </div>
     </div>
 </div>
-
 </body>
 
 <template name="shortcuts">
@@ -97,20 +104,37 @@
         <div class="block pad">
             <legend>Velkommen til NTNUB</legend>
             <p>
-                NTNUB er tenkt som en side som skal hjelpe studenter på NTNU med å letter og mer effektift ha oversikt over hverdagen.
-                Med snarveier til det du trenger, og en utvidet kalender som er tilpasset ting som skjer på skolen.
+                NTNUB er tenkt som en side som skal hjelpe studenter på NTNU med å letter og mer effektift ha oversikt
+                over hverdagen.
+                <br>Siden gir deg snarveier til det du trenger, og en utvidet kalender som er tilpasset ting som skjer
+                på skolen.
             </p>
             {{#if loggingIn}}
             <div class="loader"></div>
             {{else}}
-            <button class="facebook btn btn-primary btn-lg"><i class="fa fa-facebook-square"></i> Logg inn med facebook
-            </button>
-            <button class="google btn btn-primary btn-lg"><i class="fa fa-google-plus-square"></i> Logg inn med google
-            </button>
+            <div>
+                <button class="facebook btn btn-primary btn-lg"><i class="fa fa-facebook-square"></i> Logg inn med
+                    facebook
+                </button>
+                <button class="google btn btn-primary btn-lg"><i class="fa fa-google-plus-square"></i> Logg inn med
+                    google
+                </button>
+            </div>
             {{/if}}
-            <p class="text-muted">
-                Siden er under utvikling
-            </p>
+            <br>
+
+            <div class="well well-lg">
+                <h3>Siden er under utvikling</h3>
+
+                <p>
+                    Har du ideer eller ønsker å være med på å videre utvikle denne siden så ta
+                    kontakt
+                </p>
+                <a href="https://github.com/thaffe/NTNUB" target="_blank" class="btn btn-primary"><i
+                        class="fa fa-github-square"></i> NTNU på GitHub </a>
+                <a href="mailto:thafveli@stud.ntnu.no" target="_blank" class="btn btn-primary"><i
+                        class="fa fa-envelope"></i> Send en mail</a>
+            </div>
 
         </div>
     </div>

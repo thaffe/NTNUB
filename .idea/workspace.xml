@@ -26,16 +26,18 @@
       <file leaf-file-name="ntnub.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/ntnub.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1202" max-vertical-offset="2142">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="typeahead.jquery.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/taginput/lib/typeahead.jquery.js">
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/bootstrap3/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="24" selection-start="4945" selection-end="4945" vertical-scroll-proportion="78.7" vertical-offset="5025" max-vertical-offset="20808">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="93060">
               <folding />
             </state>
           </provider>
@@ -44,8 +46,10 @@
       <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="5" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="3528">
-              <folding />
+            <state line="4" column="3" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3618">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,16 +66,7 @@
       <file leaf-file-name="ntnub.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/ntnub.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="115" selection-start="3110" selection-end="3110" vertical-scroll-proportion="-11.368421" vertical-offset="1152" max-vertical-offset="5058">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/packages/bootstrap3/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
+            <state line="36" column="11" selection-start="1411" selection-end="1411" vertical-scroll-proportion="-7.111111" vertical-offset="456" max-vertical-offset="5490">
               <folding />
             </state>
           </provider>
@@ -80,7 +75,29 @@
       <file leaf-file-name="ntnub.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/ntnub.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="65" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+            <state line="4" column="3" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.styl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/style.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="17" selection-start="928" selection-end="928" vertical-scroll-proportion="0.66146994" vertical-offset="216" max-vertical-offset="3726">
               <folding />
             </state>
           </provider>
@@ -107,29 +124,105 @@
         <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/packages/taginput/package.js" />
         <option value="$PROJECT_DIR$/packages/taginput/lib/bootstrap-tagsinput.css" />
-        <option value="$PROJECT_DIR$/client/login.js" />
         <option value="$PROJECT_DIR$/packages/taginput/lib/bootstrap-tagsinput.js" />
-        <option value="$PROJECT_DIR$/client/style.styl" />
         <option value="$PROJECT_DIR$/packages/datetimepicker/moment-with-langs.min.js" />
         <option value="$PROJECT_DIR$/packages/datetimepicker/package.js" />
         <option value="$PROJECT_DIR$/packages/bootstrap/package.js" />
         <option value="$PROJECT_DIR$/packages/bootstrap3/package.js" />
         <option value="$PROJECT_DIR$/packages/bootstrap3/js/moment.js" />
-        <option value="$PROJECT_DIR$/server/ntnub.js" />
         <option value="$PROJECT_DIR$/packages/taginput/lib/typeahead.jquery.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/client/ntnub.js" />
         <option value="$PROJECT_DIR$/client/calendar.js" />
+        <option value="$PROJECT_DIR$/server/ntnub.js" />
+        <option value="$PROJECT_DIR$/client/login.js" />
         <option value="$PROJECT_DIR$/client/ntnub.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/client/style.styl" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
-    <option name="y" value="1076" />
+    <option name="y" value="-4" />
     <option name="width" value="1857" />
     <option name="height" value="1085" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code StylePHP</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Ini Files</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Phing</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CssUnknownTarget</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -240,6 +333,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ntnub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ntnub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -263,7 +378,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.File Status" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -309,8 +424,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="1076" width="1857" height="1085" extended-state="6" />
-    <editor active="false" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -318,7 +433,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -360,7 +475,9 @@
     <entry file="file://$PROJECT_DIR$/client/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="26" selection-start="2357" selection-end="2357" vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="1674">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -402,14 +519,7 @@
     <entry file="file://$PROJECT_DIR$/client/style.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="0" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0" vertical-offset="989" max-vertical-offset="3222">
-          <folding>
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -472,20 +582,6 @@
         <state line="15" column="48" selection-start="0" selection-end="689" vertical-scroll-proportion="0.28331584" vertical-offset="0" max-vertical-offset="953" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/style.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0" vertical-offset="989" max-vertical-offset="3222">
-          <folding>
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395609801514" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="8" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
@@ -523,51 +619,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/taginput/lib/typeahead.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1585" column="22" selection-start="62940" selection-end="62945" vertical-scroll-proportion="31.272528" vertical-offset="0" max-vertical-offset="30906">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/taginput/lib/bootstrap-tagsinput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="52" selection-start="9358" selection-end="9358" vertical-scroll-proportion="0.0" vertical-offset="4428" max-vertical-offset="8928">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/ntnub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/taginput/lib/typeahead.jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="24" selection-start="4945" selection-end="4945" vertical-scroll-proportion="78.7" vertical-offset="5025" max-vertical-offset="20808">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/ntnub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="65" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="5" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="3528">
           <folding />
         </state>
       </provider>
@@ -579,16 +633,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/ntnub.html">
+    <entry file="file://$PROJECT_DIR$/packages/taginput/lib/typeahead.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="115" selection-start="3110" selection-end="3110" vertical-scroll-proportion="-11.368421" vertical-offset="1152" max-vertical-offset="5058">
+        <state line="152" column="24" selection-start="4945" selection-end="4945" vertical-scroll-proportion="-2.6677966" vertical-offset="5025" max-vertical-offset="20808">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/ntnub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/bootstrap3/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/taginput/lib/bootstrap-tagsinput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="52" selection-start="9358" selection-end="9358" vertical-scroll-proportion="0.0" vertical-offset="4428" max-vertical-offset="8928">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/bootstrap3/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="93060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3618">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/ntnub.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="11" selection-start="1411" selection-end="1411" vertical-scroll-proportion="-7.111111" vertical-offset="456" max-vertical-offset="5490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/ntnub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1202" max-vertical-offset="2142">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/style.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="17" selection-start="928" selection-end="928" vertical-scroll-proportion="0.66146994" vertical-offset="216" max-vertical-offset="3726">
           <folding />
         </state>
       </provider>

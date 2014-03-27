@@ -1,3 +1,8 @@
+/*!
+ * NTNUB v0.1 (http://ntnub.com)
+ * Copyright 2014 Nicolay Thafvelin.
+ * Licensed under BSD (https://github.com/thaffe/NTNUB/blob/master/LICENSE)
+ */
 Shortcuts = new Meteor.Collection("shortcuts");
 Courses = new Meteor.Collection("courses");
 GetCourses = function(){
